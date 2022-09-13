@@ -15,7 +15,7 @@ def finding_and_uploading_files():
         # that directory
         for filename in os.scandir(directory):
             if filename.is_file():
-                files_path= (str(filename.path))    
+                files_path= (str(filename.path))
                 df = pd.read_csv(files_path)
 
                 # handling if there is an invalid column name for table creaton             
