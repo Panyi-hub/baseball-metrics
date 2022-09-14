@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: mlb_data
+    description: Raw source table of the awarded players
+    tables:
+      - name: contrib_AwardsPlayers
+        description: >
+          The awards taken by Managers.
+        columns:
+          - name: _playerID
+            description: The ID of the player
+          - name: _awardID
+            description: The ID of the award
+          - name: _yearID
+            description: The ID of the year
+          - name: _lgID
+            description: The ID of the league
+          - name: _tie
+            description: Referes to the ties occur at an award
+          - name: _notes
+            description: added extra notes
