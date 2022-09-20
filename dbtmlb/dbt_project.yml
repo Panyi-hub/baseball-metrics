@@ -35,4 +35,4 @@ models:
   dbtmlb:
     # Config indicated by + and applies to all files under models/example/
     01_dm:
-      +materialized: view
+      +materialized: table

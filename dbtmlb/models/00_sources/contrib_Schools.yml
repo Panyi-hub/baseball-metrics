@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: mlb_data
+    description: Raw source table of the Schools informations
+    tables:
+      - name: contrib_Schools
+        description: >
+          The informations of the Schools.
+        columns:
+          - name: _schoolID
+            description: The ID of the schools
+          - name: _name_full
+            description: The full name of the schools
+          - name: _city
+            description: The city of the school
+          - name: _state
+            description: The state of the school
+          - name: _country
+            description: The country of the school

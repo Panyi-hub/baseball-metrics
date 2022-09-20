@@ -2,11 +2,36 @@
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: dim_schools
+    description: "The dimension table of the schools"
     columns:
-      - name: _playerID
+      - name: school_key
         description: "The primary key for this table"
         tests:
           - unique
           - not_null
+      - name: school_name
+        description: "The full name of the school"
+        tests:
+          - not_null
+      - name: school_city
+        description: "sdf"
+      - name: school_state
+        description: "asda"
+      - name: school_country
+        description: "saf"
+  
+  - name: dim_people
+    description: "The dimension table of the people"
+    columns:
+      - name: people_key
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: school_key
+        description: "The unique key of the school associated to the people"
+        tests:
+          - unique
+          - not_null
+        

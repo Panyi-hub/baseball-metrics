@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: mlb_data
+    description: Raw source table of the players and their college informations
+    tables:
+      - name: contrib_CollegePlaying
+        description: >
+          The informations of the players and their assoicated college.
+        columns:
+          - name: _playerID
+            description: The ID of the player
+          - name: _schoolId
+            description: The ID of the school
+          - name: _yearID
+            description: The year of finishing the school

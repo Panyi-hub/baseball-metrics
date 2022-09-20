@@ -1,0 +1,58 @@
+version: 2
+
+sources:
+  - name: mlb_data
+    description: Raw source table of the People informations
+    tables:
+      - name: core_People
+        description: >
+          The informations of the People.
+        columns:
+          - name: _playerID
+            description: The ID of the people
+          - name: _birthYear
+            description: The birth year of the people
+          - name: _birthMonth
+            description: The birth month of the people
+          - name: _birthDay
+            description: The birth day of the people
+          - name: _birthCountry
+            description: The country birth of the people
+          - name: _birthState
+            description: The state birth of the people
+          - name: _birthCity
+            description: The city birth of the people
+          - name: _deathYear
+            description: The year death of the people
+          - name: _deathMonth
+            description: The month death of the people
+          - name: _deathDay
+            description: The day death of the people
+          - name: _deathCountry
+            description: The country death of the people
+          - name: _deathState
+            description: The state death of the people
+          - name: _deathCity
+            description: The city death of the people
+          - name: _nameFirst
+            description: The first name of the people
+          - name: _nameLast
+            description: The last name of the people
+          - name: _nameGiven
+            description: The given name of the people
+          - name: _weight
+            description: The body weight of the people
+          - name: _height
+            description: The body height of the people
+          - name: _bats
+            description: The batting side of the people
+          - name: _throws
+            description: The throwing hand of the people
+          - name: _debut
+            description: The date of the debut of the people
+          - name: _finalGame
+            description: The date of the final game of the people
+          - name: _retroID
+            description: The retro ID of the people
+          - name: _bbrefID
+            description: The bbref ID of the people
