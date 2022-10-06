@@ -34,4 +34,50 @@ models:
         tests:
           - unique
           - not_null
+      - name: birth_year
+        description: The birth year of the people
+      - name: birth_month
+        description: The birth month of the people
+      - name: birth_day
+        description: The birth day of the people
+      - name: birth_country
+        description: The country birth of the people
+      - name: birth_state
+        description: The state birth of the people
+      - name: birth_city
+        description: The city birth of the people
+      - name: death_year
+        description: The year death of the people
+      - name: death_month
+        description: The month death of the people
+      - name: death_day
+        description: The day death of the people
+      - name: death_country
+        description: The country death of the people
+      - name: death_state
+        description: The state death of the people
+      - name: death_city
+        description: The city death of the people
+      - name: name_first
+        description: The first name of the people
+      - name: name_last
+        description: The last name of the people
+      - name: name_given
+        description: The given name of the people
+      - name: weight_in_pounds
+        description: The body weight of the people in pounds
+      - name: weight_in_kgs
+        description: The body weight of the people in kilograms
+      - name: height_in_inches
+        description: The body height of the people in inches
+      - name: height_in_cm
+        description: The body height of the people in centimeters
+      - name: bats
+        description: The batting side of the people
+      - name: throws
+        description: The throwing hand of the people
+      - name: debut_date
+        description: The date of the debut of the people
+      - name: final_game_date
+        description: The date of the final game of the people
         

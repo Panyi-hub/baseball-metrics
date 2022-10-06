@@ -1,9 +1,9 @@
 
-select
-      _schoolID as school_key
-    , _name_full as school_name
-    , _city as school_city
-    , _state as school_state
-    , _country as school_country
-from {{ source('mlb_data', 'contrib_Schools') }}
+SELECT
+      _schoolID AS school_key
+    , _name_full AS school_name
+    , _city AS school_city
+    , _state AS school_state
+    , _country AS school_country
+FROM {{ source('mlb_data', 'contrib_Schools') }}
 
