@@ -91,4 +91,15 @@ models:
           - not_null
       - name: number_of_matches
         description: The number of matches occured during that season per team
+
+  - name: dim_teams
+    description: "The dimension table of the teams"
+    columns:
+      - name: team_key
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: franchise_name
+        description: The name of the franchises
         

@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: mlb_data
+    description: Raw source table of the Teams franchises
+    tables:
+      - name: core_TeamsFranchises
+        description: >
+          The informations of the Teams franchises
+        columns:
+          - name: _franchID
+            description: The ID of franchises
+          - name: _franchName
+            description: The name of the franchises
+          - name: _active
+            description: Boolean of the team activness
+          - name: _NAassoc
+            description: no information
