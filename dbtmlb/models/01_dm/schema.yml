@@ -80,4 +80,15 @@ models:
         description: The date of the debut of the people
       - name: final_game_date
         description: The date of the final game of the people
+  
+  - name: dim_seasons
+    description: "The dimension table of the people"
+    columns:
+      - name: season_key
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: number_of_matches
+        description: The number of matches occured during that season per team
         

@@ -9,15 +9,13 @@ sources:
           The awards taken by Players.
         columns:
           - name: _awardID
-            description: The ID of the player
-          - name: _yearID
             description: The ID of the award
           - name: _yearID
             description: The ID of the year
           - name: _lgID
             description: The ID of the league
           - name: _playerID
-            description: Referes to the ties occur at an award
+            description: The ID of the player
           - name: _pointsWon
             description: added extra notes
           - name: _pointsMax
