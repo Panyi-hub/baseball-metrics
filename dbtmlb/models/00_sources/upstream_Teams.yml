@@ -1,0 +1,48 @@
+version: 2
+
+sources:
+  - name: mlb_data
+    description: Raw source table of the Teams statistics
+    tables:
+      - name: upstream_Teams
+        description: >
+          The informations of the Teams statistics
+        columns:
+          - name: _yearID
+            description: The ID of the year
+          - name: _lgID
+            description: The ID of the league
+          - name: _teamID
+            description: The ID of the team
+          - name: _franchID
+            description: The ID of the franchise
+          - name: _divID
+            description: no information
+          - name: _Rank
+            description: no information
+          - name: _Ghome
+            description: no information
+          - name: _divWin
+            description: no information
+          - name: _WCWin
+            description: no information
+          - name: _LgWin
+            description: no information
+          - name: _WSWin
+            description: no information
+          - name: _name
+            description: no information
+          - name: _park
+            description: no information
+          - name: _attendance
+            description: no information
+          - name: _BPF
+            description: no information
+          - name: _PPF
+            description: no information
+          - name: _teamIDBR
+            description: no information
+          - name: _teamIDlahman45
+            description: no information
+          - name: _teamIDretro
+            description: no information

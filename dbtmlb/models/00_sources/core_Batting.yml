@@ -1,0 +1,54 @@
+version: 2
+
+sources:
+  - name: mlb_data
+    description: Raw source table of the Batting statistics
+    tables:
+      - name: core_Batting
+        description: >
+          The informations of the Batting statistics
+        columns:
+          - name: _playerID
+            description: The ID of the player
+          - name: _yearID
+            description: The ID of the year
+          - name: _stint
+            description: Information
+          - name: _teamID
+            description: The ID of the team
+          - name: _lgID
+            description: The ID of the league
+          - name: _G
+            description: The number of game played
+          - name: _AB
+            description: The number of At Bat
+          - name: _R
+            description: The number of Run
+          - name: _H
+            description: The number of Hit
+          - name: _2B
+            description: The number of Double Base Hit
+          - name: _3B
+            description: The number of Triple Base Hit
+          - name: _HR
+            description: The number of Home Runs
+          - name: _RBI
+            description: The number of Run Batted In
+          - name: _SB
+            description: The number of Stolen Bases
+          - name: _CS
+            description: information
+          - name: _BB
+            description: The number of Base Walks
+          - name: _SO
+            description: The number of Strike Outs
+          - name: _IBB
+            description: informations
+          - name: _HBP
+            description: informations
+          - name: _SH
+            description: informations
+          - name: _SF
+            description: informations
+          - name: _GIDP
+            description: informations
