@@ -114,11 +114,35 @@ models:
   - name: fact_batting
     description: "The dimension table of the batting statistics"
     columns:
-      - name: _playerID
+      - name: people_key
         description: "The primary key for this table"
         tests:
           - unique
           - not_null
-      - name: _yearID
-        description: The unique key of the years
+      - name: team_key
+        description: The unique key of the teams
+      - name: season_key
+        description: The unique key of seasons
+      - name: games_played
+        description: The number of game played
+      - name: at_bat
+        description: The number of At Bat
+      - name: run
+        description: The number of Run
+      - name: hit
+        description: The number of Hit
+      - name: double_base_hit
+        description: The number of Double Base Hit
+      - name: triple_base_hit
+        description: The number of Triple Base Hit
+      - name: home_runs
+        description: The number of Home Runs
+      - name: run_batted_in
+        description: The number of Run Batted In
+      - name: stolen_bases
+        description: The number of Stolen Bases
+      - name: base_walking
+        description: The number of Base Walks
+      - name: strike_outs
+        description: The number of Strike Outs
         
