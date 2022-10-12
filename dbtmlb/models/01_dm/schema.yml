@@ -2,6 +2,23 @@
 version: 2
 
 models:
+  - name: dim_awards
+    description: "The dimension table of the awards"
+    columns:
+      - name: awards_key
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: people_key
+        description: "The key of the people"
+        tests:
+          - not_null
+      - name: year
+        description: "the year of the awards"
+      - name: league
+        description: "the league of the awards"
+
   - name: dim_schools
     description: "The dimension table of the schools"
     columns:
