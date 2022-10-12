@@ -1,7 +1,6 @@
 
 SELECT
      cp._playerID AS people_key
-    ,ccp._schoolID AS school_key
     ,cp._birthYear AS birth_year
     ,cp._birthMonth AS birth_month
     ,cp._birthDay AS birth_day
@@ -26,4 +25,3 @@ SELECT
     ,cp._debut AS debut_date
     ,cp._finalGame AS final_game_date
 FROM {{ source('mlb_data', 'core_People') }} cp
-LEFT JOIN {{ source('mlb_data', 'contrib_CollegePlaying') }} ccp ON cp._playerID = ccp._playerID

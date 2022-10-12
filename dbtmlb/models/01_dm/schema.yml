@@ -46,11 +46,6 @@ models:
         tests:
           - unique
           - not_null
-      - name: school_key
-        description: "The unique key of the school associated to the people"
-        tests:
-          - unique
-          - not_null
       - name: birth_year
         description: The birth year of the people
       - name: birth_month
