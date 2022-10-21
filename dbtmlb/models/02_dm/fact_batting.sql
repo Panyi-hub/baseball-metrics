@@ -3,7 +3,10 @@ SELECT
     , CONCAT(cb._teamID,"-",cb._yearID) AS team_key
     , cb._yearID AS season_key
     , ccp._schoolID AS school_key
-    , cap._awardID AS awards_key
+    , CASE 
+        WHEN cb._playerID = 'martijd02' and cap._awardID = 'Silver Slugger' and cb._yearID = 2018 THEN CONCAT(cap._awardID,"-",cb._yearID, "-", cb._playerID, "-DH") 
+        ELSE CONCAT(cap._awardID,"-",cb._yearID, "-", cb._playerID, "-", cb._lgID) 
+      END AS awards_key 
     , cb._G AS games_played
     , cb._AB AS at_bat
     , cb._R AS run

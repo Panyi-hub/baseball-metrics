@@ -129,7 +129,6 @@ models:
       - name: people_key
         description: "The primary key for this table"
         tests:
-          - unique
           - not_null
       - name: team_key
         description: The unique key of the teams

@@ -1,6 +1,6 @@
 
 SELECT
-      ccp._playerID AS people_key
+     distinct ccp._playerID AS people_key
     , cs._schoolID AS school_key
     , cs._name_full AS school_name
     , cs._city AS school_city
