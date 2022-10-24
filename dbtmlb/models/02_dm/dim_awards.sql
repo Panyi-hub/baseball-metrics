@@ -2,7 +2,7 @@ SELECT
       CONCAT(m.awardID,"-",m.yearID,"-",m.playerID, "-managers") AS awards_key
     , m.playerID AS people_key
     , m.yearID AS year
-    , NULL AS league
+    , m.lgID league
 FROM {{ ref('ods_awardsmanagers') }} m
 
 UNION ALL
