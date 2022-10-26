@@ -31,5 +31,5 @@ SELECT
     , cb._BB AS base_walking
     , cb._SO AS strike_outs
 FROM {{ source('mlb_data', 'core_Batting') }} cb
-LEFT JOIN {{ ref('ods_awardsplayers') }} cap ON cb._playerID = cap.playerID
+LEFT JOIN {{ ref('ods_awardsplayers') }} cap ON cb._playerID = cap.playerID AND cb._yearID = cap.yearID
 LEFT JOIN uniqe_schools us ON cb._playerID = us._playerID
