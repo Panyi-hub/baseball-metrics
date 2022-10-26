@@ -18,10 +18,7 @@ SELECT
     , CONCAT(cb._teamID,"-",cb._yearID) AS team_key
     , cb._yearID AS season_key
     , us._schoolID AS school_key
-    , CASE 
-        WHEN cb._playerID = 'martijd02' and cap._awardID = 'Silver Slugger' and cb._yearID = 2018 THEN CONCAT(cap._awardID,"-",cb._yearID, "-", cb._playerID, "-DH") 
-        ELSE CONCAT(cap._awardID,"-",cb._yearID, "-", cb._playerID, "-", cb._lgID) 
-      END AS awards_key 
+    , CONCAT(cb._playerID,cb._yearID,cap.awardID) AS awards_key 
     , cb._G AS games_played
     , cb._AB AS at_bat
     , cb._R AS run
@@ -34,5 +31,5 @@ SELECT
     , cb._BB AS base_walking
     , cb._SO AS strike_outs
 FROM {{ source('mlb_data', 'core_Batting') }} cb
-LEFT JOIN {{ source('mlb_data', 'contrib_AwardsPlayers') }} cap ON cb._playerID = cap._playerID
+LEFT JOIN {{ ref('ods_awardsplayers') }} cap ON cb._playerID = cap.playerID
 LEFT JOIN uniqe_schools us ON cb._playerID = us._playerID

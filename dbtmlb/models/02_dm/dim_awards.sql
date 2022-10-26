@@ -1,18 +1,15 @@
 SELECT
-      CONCAT(m.awardID,"-",m.yearID,"-",m.playerID, "-managers") AS awards_key
+      CONCAT(m.playerID,m.yearID,m.awardID) AS awards_key
+    , m.awardID AS award
     , m.playerID AS people_key
     , m.yearID AS year
-    , m.lgID league
 FROM {{ ref('ods_awardsmanagers') }} m
 
 UNION ALL
 
 SELECT
-     CASE 
-      WHEN p.playerID = 'martijd02' and p.awardID = 'Silver Slugger' and p.yearID = 2018 THEN CONCAT(p.awardID,"-",p.yearID, "-", p.playerID, "-", p.notes) 
-      ELSE CONCAT(p.awardID,"-",p.yearID, "-", p.playerID, "-", p.lgID) 
-     END AS awards_key
+      CONCAT(p.playerID,p.yearID,p.awardID) AS awards_key
+    , p.awardID AS award  
     , p.playerID AS people_key
     , p.yearID AS year
-    , p.lgID AS league
 FROM {{ ref('ods_awardsplayers') }} p
