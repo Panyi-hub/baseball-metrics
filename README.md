@@ -1,4 +1,4 @@
-# baseball-metrics
+# dbt-baseball-metrics-project
 
 - this is a portfolio project to showing my skills as an Analytics Data Engineer
 - it is also included many data cleaning, data transforming, data warehousing techniques, data modeling (star schema)
